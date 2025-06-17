@@ -3,6 +3,12 @@ import Vertex from "./vertex.js";
 
 const graph = createGraph();
 
+/**
+ * Finds the shortest path a knight can take from start to target on a chessboard.
+ * @param {number[]} start - Starting position [x, y]
+ * @param {number[]} target - Target position [x, y]
+ * @returns {Array} - Array of positions from start to target
+ */
 export default function knightMoves(start, target) {
     const queue = [];
     const visited = new Set();
